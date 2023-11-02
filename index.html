@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Забронировать время экскурсии</title>
+</head>
+
+<html>
+<body>
+<h3 align="center">Экскурсия в дом Наркомфина</h3>
+<!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
+<!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p>Для поисковика:<input type="Text"  name="q" value="search"></p>
+    <p>Количество билетов:<input type="Text" name="last_name" size=20  value="2"></p>
+    <p>Ваш возраст: <input type="Number" name="age" size=20 value="0"></p>
+    <p>Время:
+        <input type="Radio" name="time" value="Moscow">15:00
+        <input type="Radio" name="time" value="Nizhny" checked >19:00
+    </p>
+
+    <p>Желаемое время экскурсии:
+        <input type="Checkbox" name="experience"  value="10" checked>30 минут
+        <input type="Checkbox"  name="experience"   value="20" checked>50 минут
+        <input type="Checkbox" name="experience" value="30" checked>1,5 часа
+    </p>
+
+    <p>Дата: <input type="date" name="user_date"  value='2023-11-13'></p>
+    <p>Пароль: <input type="Password" name="password" size=9  value="123"></p>
+    <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+
+    <input type="hidden" name="function"  value="page">
+    <input type="hidden" name="page_id"  value="3">
+
+    <p>
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+
+</form>
+</body>
+</html>
